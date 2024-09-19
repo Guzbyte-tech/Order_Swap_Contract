@@ -34,18 +34,11 @@ Make sure you have the following installed:
 
 ### Clone the Repository
 
-bash
-
-Copy code
-
 `git clone git@github.com:Guzbyte-tech/Order_Swap_Contract.git
 cd OrderSwap`
 
 ### Install Dependencies
 
-bash
-
-Copy code
 
 `npm install`
 
@@ -58,17 +51,13 @@ You can run Hardhat commands to compile, test, and deploy your contracts:
 
 -   **Compile the contracts**:
 
-    bash
 
-    Copy code
 
     `npx hardhat compile`
 
 -   **Run Tests**:
 
-    bash
 
-    Copy code
 
     `npx hardhat test`
 
@@ -77,9 +66,6 @@ You can run Hardhat commands to compile, test, and deploy your contracts:
 
 The project includes unit tests for all functionalities of the `OrderSwap` contract. To run the tests, use:
 
-bash
-
-Copy code
 
 `npx hardhat test`
 
