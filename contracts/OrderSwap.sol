@@ -40,7 +40,6 @@ contract OrderSwap {
     mapping(uint => Order) OrderIdToOrders; //Order => Order
     mapping(address => TransactionHistory[]) public depositorHistory; // Depositor's order history
     mapping(address => TransactionHistory[]) public fulfillerHistory; // Fulfiller's fulfilled order history
-    
 
     event OrderCreated(
         uint orderId,
@@ -191,5 +190,10 @@ contract OrderSwap {
         );
 
         emit OrderCancelled(_orderId);
+    }
+
+    function getOrder(uint _orderId) external view returns (Order memory) {
+        require(OrderIdToOrders[_orderId].orderId > 0, "Invalid Order Id");
+        return OrderIdToOrders[_orderId];
     }
 }
